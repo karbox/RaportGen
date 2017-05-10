@@ -1,0 +1,27 @@
+﻿<Window x:Class="RaportGen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RaportGen"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="443.864" Width="724.392">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="329*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="317*"/>
+        </Grid.ColumnDefinitions>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="99,10,0,0" VerticalAlignment="Top" Width="144" Height="22"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="91"><Run Text="Wybierz produkt"/><Run Text=":"/></TextBlock>
+        <Button x:Name="addButton" Content="dodaj" HorizontalAlignment="Left" Margin="154,10,0,0" VerticalAlignment="Top" Width="75" Click="addButton_Click" Grid.Column="2" Height="20"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="10,37,0,0" VerticalAlignment="Top" Height="341" Width="676" Grid.ColumnSpan="3"/>
+        <Button x:Name="deleteButton" Content="Usuń" HorizontalAlignment="Left" Margin="134,383,0,0" VerticalAlignment="Top" Width="75" Click="deleteButton_Click" Height="20"/>
+        <Button x:Name="dbaseButton" Content="edytuj" HorizontalAlignment="Left" Margin="246,10,0,0" VerticalAlignment="Top" Width="75" Click="dbaseButton_Click" Grid.Column="2" Height="20"/>
+        <Button x:Name="button" Content="Generuj" HorizontalAlignment="Left" Margin="16,383,0,0" VerticalAlignment="Top" Width="75" Click="button_Click" Height="20"/>
+        <DatePicker x:Name="datePicker" HorizontalAlignment="Left" Margin="31,10,0,0" VerticalAlignment="Top" DisplayDate="05/03/2017 14:53:51" Height="24" Width="102" Grid.Column="2"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="259,13,0,0" TextWrapping="Wrap" Text="Ilość" VerticalAlignment="Top"/>
+        <TextBox x:Name="iloscBox" HorizontalAlignment="Left" Height="23" Margin="288,11,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="29"/>
+
+    </Grid>
+</Window>
